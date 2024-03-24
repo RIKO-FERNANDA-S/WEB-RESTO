@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- CDN FEATHER ICONS -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    <!-- BOX ICONS -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- CAROUSEL -->
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    /> -->
+
+    <!-- LINK GOOGLE FONT -->
+    <!-- FONT JOSEFIN SLAB -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@100..700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- FONT K2D -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@100..700&family=K2D:wght@100;200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- FONT INRIA -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inria+Sans:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      /* .navbar .scroll{
+        background-color: #3F83F8;
+      } */
+
+      .blur-backdrop-filter {
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(15px);
+      }
+    </style>
+
+    <title>restaurant</title>
+  </head>
+  <body class="bg-bg-tinary scroll-smooth">
+    <nav
+      id="navbar"
+      class="navbar scroll-smooth bg-bg-primary bg-opacity-20 dark:bg-gray-900 fixed w-full z-20 top-0 start-0 pt-2 dark:border-gray-600 bg-clip-padding blur-backdrop-filter"
+    >
+      <div
+        class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
+      >
+        <a href="#" class="flex items-center rtl:space-x-reverse">
+          <img
+            src="../assets/logo.png"
+            class="h-20 w-auto"
+            alt="Flowbite Logo"
+          />
+          <span
+            class="self-center text-3xl px-4 text-primary font-medium whitespace-nowrap dark:text-white font-K2D max-md:hidden"
+            >Savoria</span
+          >
+        </a>
+        <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+          <button
+            type="button"
+            class="text-white bg-primary hover:focus:outline-none focus:bg-[#b55f36] font-medium rounded-3xl text-xl px-4 py-2 mr-16 max-md:mr-0 max-md:text-base text-center dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+          >
+            Contact us
+          </button>
+          <button
+            data-collapse-toggle="navbar-sticky"
+            type="button"
+            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            aria-controls="navbar-sticky"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Open main menu</span>
+            <svg
+              class="w-5 h-5"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 17 14"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M1 1h15M1 7h15M1 13h15"
+              />
+            </svg>
+          </button>
+        </div>
+        <div
+          class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
+          id="navbar-sticky"
+        >
+          <ul
+            class="font-K2D flex flex-col p-4 mr-8 md:p-0 mt-4 max-md:border max-md:border-gray-400 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 max-md:bg-bg-secodary dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
+          >
+            <li>
+              <a
+                href="#"
+                class="block text-2xl max-md:text-lg py-2 px-3 text-primary rounded font-bold hover:text-secondary focus:text-secondary max-md:p-0 max-md:hover:bg-secondary max-md:focus:bg-tinary max-md:focus:text-primary max-md:hover:text-primary max-md:px-5 transition-all duration-100 ease-in-out"
+                aria-current="page"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="#about"
+                class="block text-2xl max-md:text-lg py-2 px-3 text-primary rounded font-bold hover:text-secondary focus:text-secondary max-md:p-0 max-md:hover:bg-secondary max-md:focus:bg-tinary max-md:focus:text-primary max-md:hover:text-primary max-md:px-5 transition-all duration-100 ease-in-out max-md:my-2"
+                >Menu</a
+              >
+            </li>
+            <li>
+              <a
+                href="#location"
+                class="block text-2xl max-md:text-lg py-2 px-3 text-primary rounded font-bold hover:text-secondary focus:text-secondary max-md:p-0 max-md:hover:bg-secondary max-md:focus:bg-tinary max-md:focus:text-primary max-md:hover:text-primary max-md:px-5 transition-all duration-300 ease-in-out"
+                >Location</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div
+      class="w-[30rem] h-[30rem] rounded-bl-[250rem] bg-bg-secodary absolute right-0 z-[-999] max-md:w-[20rem] max-md:h-[20rem]"
+    ></div>
+
+    <!-- HERO SECTION -->
+    <section id="home" class="h-[100vh] w-full flex">
+      <div class="flex my-auto justify-between w-full h-max">
+        <div
+          class="flex mt-28 flex-col h-full w-[56%] relative ml-16 z-10 max-md:w-full max-md:mt-12"
+        >
+          <h1
+            class="font-K2D font-bold text-[4rem] leading-tight w-[74%] text-primary max-md:text-5xl"
+          >
+            Taste the Uniqueness in Each of Our Dishes
+          </h1>
+          <p
+            class="font-josefin text-primary text-2xl mt-3 leading-7 font-medium w-[70%] max-md:text-base"
+          >
+            Guided by taste, we at Savoria present a unique harmony of various
+            cuisines. Come join us to celebrate diversity in charming and
+            colorful dishes
+          </p>
+          <button
+            class="w-max border-2 mt-6 px-5 rounded-3xl font-semibold font-josefin py-1 text-xl text-primary border-primary max-md:text-base"
+          >
+            Check Out Menu
+          </button>
+        </div>
+        <div
+          class="felx w-full h-max justify-center absolute z-0 max-md:items-center max-md:hidden"
+        >
+          <img
+            class="w-[50%] ml-auto flex flex-wrap mt-12 relative max-md:ml-0"
+            src="../assets/menu/img-home.png"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- MENU SECTION -->
+    <section id="about" class="h-[120vh] w-full pt-40">
+      <div class="w-full">
+        <div class="flex justify-between">
+          <div class="ml-14 max-md:ml-8">
+            <h1 class="text-6xl font-K2D font-bold text-primary max-md:text-5xl">Food Menu</h1>
+            <p
+              class="text-xl leading-10 text font-josefin font-medium text-primary max-md:text-xl"
+            >
+              Selected Dishes For Eating Delight
+            </p>
+          </div>
+          <div class="w-max h-auto items-end flex">
+            <ul class="flex text-5xl text-primary gap-2 cursor-pointer mr-8">
+              <li class="button-next">
+                <i class="bx bx-left-arrow-circle"></i>
+              </li>
+              <li class="button-prev">
+                <i class="bx bx-right-arrow-circle"></i>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="container w-full">
+        <div class="swiper overflow-hidden w-full absolute h-full mt-4  py-7">
+          <div class="swiper-wrapper w-max h-[22rem] gap-8  px-10  bg-bg-secodary justify-start flex flex-row items-center">
+            <div class="swiper-slide h-full flex flex-col w-[17rem] justify-center">
+              <div class="z-10 h-full w-max flex">
+                <img
+                  class="h-[13rem] absolute pl-3"
+                  src="../assets/menu/jus-jeruk1.png"
+                  alt="jus-jeruk1"
+                />
+              </div>
+
+              <div class="z-0 flex items-end h-full w-[17rem] mb-6">
+                <div
+                  class="bg-slate-200 h-72 w-full flex flex-col items-center justify-end pb-5 rounded-xl shadow-[17px_23px_21px_-5px_rgba(0,0,0,0.1)]"
+                >
+                  <h1 class="font-K2D text-2xl font-bold text-primary">
+                    Orange Juice
+                  </h1>
+                  <div class="flex items-center font-K2D text-primary">
+                    <i class="bx bx-dollar text-2xl m-0 pr-1"></i>
+                    <h1 class="text-4xl font-bold">8.50</h1>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide h-full flex flex-col w-[16.5rem] justify-center">
+              <div class="z-10 h-full w-max flex">
+                <img
+                  class="h-[15rem] absolute pb-5 pl-5"
+                  src="../assets/menu/coca-cola1.png"
+                  alt=""
+                />
+              </div>
+              
+
+              <div class="z-0 flex items-end h-full w-[17rem] mb-6">
+                <div
+                  class="bg-slate-200 h-72 w-full flex flex-col items-center justify-end pb-5 rounded-xl shadow-[17px_23px_21px_-5px_rgba(0,0,0,0.1)]"
+                >
+                  <h1 class="font-K2D text-2xl font-bold text-primary">
+                    Coca - Cola
+                  </h1>
+                  <div class="flex items-center font-K2D text-primary">
+                    <i class="bx bx-dollar text-2xl m-0 pr-1"></i>
+                    <h1 class="text-4xl font-bold">4.00</h1>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="swiper-slide h-full flex flex-col w-[16.5rem] justify-center"
+            >
+              <div class="z-10 h-full w-max flex">
+                <img
+                  class="h-[15rem] absolute"
+                  src="../assets/menu/burger.png"
+                  alt="burger"
+                />
+              </div>
+
+              <div class="z-0 flex items-end h-full w-[17rem] mb-6">
+                <div
+                  class="bg-slate-200 h-72 w-full flex flex-col items-center justify-end pb-5 rounded-xl shadow-[17px_23px_21px_-5px_rgba(0,0,0,0.1)]"
+                >
+                  <h1 class="font-K2D text-2xl font-bold text-primary">
+                    Burger
+                  </h1>
+                  <div class="flex items-center font-K2D text-primary">
+                    <i class="bx bx-dollar text-2xl m-0 pr-1"></i>
+                    <h1 class="text-4xl font-bold">8.50</h1>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide h-full flex flex-col w-[16.5rem] justify-center">
+              <div class="z-10 h-full w-max flex">
+                <img
+                  class="h-[15rem] absolute"
+                  src="../assets/menu/jus-mangga.png"
+                  alt="jus-mangga"
+                />
+              </div>
+
+              <div class="z-0 flex items-end h-full w-full mb-6">
+                <div
+                  class="bg-slate-200 h-72 w-[17rem] flex flex-col items-center justify-end pb-5 rounded-xl shadow-[17px_23px_21px_-5px_rgba(0,0,0,0.1)]"
+                >
+                  <h1 class="font-K2D text-2xl font-bold text-primary">
+                    Manggo Juice
+                  </h1>
+                  <div class="flex items-center font-K2D text-primary">
+                    <i class="bx bx-dollar text-2xl m-0 pr-1"></i>
+                    <h1 class="text-4xl font-bold">8.50</h1>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="swiper-slide  h-full flex flex-col w-[16.5rem] justify-center"
+            >
+              <div class="z-10 h-full w-max flex">
+                <img
+                  class="h-[15rem] absolute"
+                  src="../assets/menu/pizza.png"
+                  alt="jus-mangga"
+                />
+              </div>
+
+              <div class="z-0 flex items-end h-full w-full mb-6">
+                <div
+                  class="bg-slate-200 h-72 w-[17rem] flex flex-col items-center justify-end pb-5 rounded-xl shadow-[17px_23px_21px_-5px_rgba(0,0,0,0.1)]"
+                >
+                  <h1 class="font-K2D text-2xl font-bold text-primary">
+                    Manggo Juice
+                  </h1>
+                  <div class="flex items-center font-K2D text-primary">
+                    <i class="bx bx-dollar text-2xl m-0 pr-1"></i>
+                    <h1 class="text-4xl font-bold">8.50</h1>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="swiper-slide h-full flex flex-col w-[16.5rem] justify-center"
+            >
+              <div class="z-10 h-full w-max flex">
+                <img
+                  class="h-[15rem] absolute"
+                  src="../assets/menu/jus-mangga.png"
+                  alt="jus-mangga"
+                />
+              </div>
+
+              <div class="z-0 flex items-end h-full w-full mb-6">
+                <div
+                  class="bg-slate-200 h-72 w-[17rem] flex flex-col items-center justify-end pb-5 rounded-xl shadow-[17px_23px_21px_-5px_rgba(0,0,0,0.1)]"
+                >
+                  <h1 class="font-K2D text-2xl font-bold text-primary">
+                    Manggo Juice
+                  </h1>
+                  <div class="flex items-center font-K2D text-primary">
+                    <i class="bx bx-dollar text-2xl m-0 pr-1"></i>
+                    <h1 class="text-4xl font-bold">8.50</h1>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+    <!-- LOCATION SECTION -->
+    <section id="location" class="h-[100vh] w-full ">
+      <div class="pt-16">
+        <div class="ml-14">
+          <h1 class="text-6xl font-K2D font-bold text-primary max-md:text-5xl">Location</h1>
+          <p
+            class="text-xl leading-10 text font-josefin font-medium text-primary max-md:text-xl"
+          >
+            One step away from the warmth of your home
+          </p>
+        </div>
+
+        <div class="w-full flex h-max bg-bg-secodary justify-between py-10 mt-9 gap-8 max-md:flex-col  ">
+
+          <div class=" flex flex-col justify-center gap-8 w-[25rem] ml-16 ">
+            <div class="flex items-center ">
+              <i class='bx bx-map text-5xl text-primary max-md:text-4xl'></i>
+              <div class="ml-3">
+                <h2 class="font-josefin text-3xl font-bold text-primary max-md:text-2xl">Restaurant Location</h2>
+                <p class="font-josefin text-xl text-primary max-md:text-lg  ">Jl. Abdurahman wachid no2, Cikarang, Jakarta, Jawa Barat</p>
+              </div>
+            </div>
+            <div class="flex items-center ">
+              <i class='bx bx-phone text-5xl text-primary max-md:text-4xl'></i>
+              <div class="ml-3">
+                <h2 class="font-josefin text-3xl font-bold text-primary max-md:text-2xl">Call Center</h2>
+                <p class="font-josefin text-xl text-primary max-md:text-lg">+62 1234 1234 1234</p>
+                <p class="font-josefin text-xl text-primary max-md:text-lg">+62 3454 4543 7549</p>
+              </div>
+            </div>
+            <div class="flex items-center">
+              <i class='bx bx-time text-5xl text-primary max-md:text-4xl '></i>
+              <div class="ml-3">
+                <h2 class="font-josefin text-3xl font-bold text-primary max-md:text-2xl">Open & Close</h2>
+                <p class="font-josefin text-xl text-primary max-md:text-lg">08:00 - 23:00</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="max-md:justify-center max-md:w-full flex ">
+            <img src="../assets/maps.png" alt="maps" class="w-5/6 border-secondary border-8">
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="w-full h-max py-12 bg-secondary mt-32  max-md:">
+      <div class="flex justify-center gap-20  items-center h-full  flex-wrap">
+        <div class="flex h-auto w-auto items-center max-md:hidden">
+          <img src="../assets/logo.png" alt="logo" class="w-3/4 ">
+        </div>
+        <div class="flex-col flex font-josefin text-2xl text-primary gap-7">
+            <a>Facebook</a>
+            <a>Instagram</a>
+            <a>Google maps </a>
+        </div>
+        <div class="flex flex-col font-josefin text-2xl text-primary gap-7">
+            <a>Home</a>
+            <a>Menu</a>
+            <a>Location</a>
+        </div>
+        <div class="flex flex-col font-josefin text-2xl text-primary gap-5 w-[28rem] max-md:text-center ">
+            <p>Contact Us</p>
+            <p>Book your spot and sample food from our hand picked chefs</p>
+            <div class="border-2 border-primary w-max h-min max-md:mx-auto ">
+              <input placeholder="Enter your email address" type="email" class="bg-transparent m-0 border-none text-xl text-primary"></input>
+              <button type="submit" class="bg-tinary m-0 text-xl h-full py-2 px-5">Send messange</button>
+            </div>
+        </div>
+  
+      </div>
+
+    </footer>
+
+    <script>
+      feather.replace();
+    </script>
+
+    <!-- Library Tailwind -->
+    <script src="../node_modules/flowbite/dist/flowbite.min.js"></script>
+
+    <script src="js/main.js"></script>
+
+    <script type="text/javascript">
+          var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  </body>
+</html>
